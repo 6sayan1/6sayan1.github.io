@@ -598,28 +598,37 @@
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
         <td style="padding:20px;width:30%;vertical-align:middle;text-align: center;">
-          <img src='images/hj_vs_cbf_2021/geometric_connection.png' width="220">
-          <p style="text-align: center;">safe set characterization</p>
+          <img src='course_projects/ECE_276C/Tier_all.png' width="220">
+          <p style="text-align: center;">MGAIL vs AMGAIL</p>
         </td>
   
         <td style="padding:20px;width:80%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2106.13176">
+          <a href="course_projects/ECE_276C/LARGE_bf_Adaptive_Model_based_Generative_Adversarial_Imitiation_Learning.pdf">
             <papertitle>Adaptive Model-based Generative Adversarial Imitiation Learning
             </papertitle>
           </a>
           <br>
-          <strong>Zhichao Li</strong>
+          <strong>Sayan Mondal</strong>,
+          David Orozco, Nicholas Ha
           <br>
-          <em>ArXiv</em>, 2021
+          <em>ECE 276C</em>
           <br>
           <!-- <a href="https://thaipduong.github.io/refgovham/">video</a> / -->
           <!-- <a href="https://drive.google.com/file/d/1JKCXhExtq4FK1ubQGmm20MsurrnsFV1W/view?usp=sharing">Project Paper Link</a> -->
-          <a href="course_projects/ECE_276C/LARGE_bf_Adaptive_Model_based_Generative_Adversarial_Imitiation_Learning.pdf">Project Paper Link</a>
+          <!-- <a href="course_projects/ECE_276C/LARGE_bf_Adaptive_Model_based_Generative_Adversarial_Imitiation_Learning.pdf">Project Paper Link</a> -->
 
-          
-          <p>This report aims to compare two methods for safe control: control barrier function and Hamilton-Jacobi reachability analysis. 
-            We will consider the difference with a focus on the following aspects: generality of system dynamics, difficulty of construction and computation cost. 
-            A standard Dubins car model will be evaluated numerically to make the comparison more concrete. 
+          <p>In this paper we introduce a new concept named,
+            AMGAIL to solve the imitation learning problem in an envi-
+            ronment in which rewards are available. AMGAIL is based
+            on MGAIL, but it replaces bad expert trajectories with good
+            ones that we generate. We make use of the total rewards
+            of the trajectories to detect how good or bad they are. We
+            tested for 3 MuJoCo environments- Hopper-v1, HalfCheetah-
+            v1, InvertedPendulum-v1. We expect that AMGAIL should per-
+            form better than vanilla MGAIL when the expert trajectories
+            are a mix of experts of varying level because the algorithm
+            is able to replace the weaker experts and in turn lower the
+            variance. Our results generally confirm this. 
           </p>
         </td>
         
