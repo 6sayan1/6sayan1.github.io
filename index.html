@@ -594,7 +594,66 @@
     </tbody>
   </table>
 
-    <!-- OJCSYS 2022 Robust Safe Flight SE(3) -->
+
+    <!-- 16-745 OCRL -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <td style="padding:20px;width:30%;vertical-align:middle;text-align: top;">
+          <video width="220" muted autoplay loop>
+            <source src="course_projects/16745_OCRL/navigation_arms_straight.gif" type="video/gif">
+          </video>
+          <!-- <p style="text-align: center;">Simulation</p> -->
+          <video width="220" muted autoplay loop>
+            <source src="course_projects/16745_OCRL/pushing.gif" type="video/gif">
+          </video>
+          <!-- <p style="text-align: center;">Simulation</p> -->
+        </td>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <td style="padding:20px;width:30%;vertical-align:middle;text-align: center;">
+          <img src='course_projects/ECE_276C/Tier_all.png' width="220">
+          <p style="text-align: center;">MGAIL vs AMGAIL</p>
+        </td>
+  
+        <td style="padding:20px;width:80%;vertical-align:middle">
+          <a href="course_projects/16745_OCRL/16745_ballbot_report.pdf">
+            <papertitle>Whole-body Trajectory Optimization and Tracking for Agile Maneuvers for a Single-Spherical-Wheeled Balancing 
+              Mobile Manipulator
+            </papertitle>
+          </a>
+          <br>
+          Juan Alvarez-Padilla, <a href="https://www.ri.cmu.edu/ri-people/christian-berger/">Christian Berger</a>
+          <strong>Sayan Mondal</strong>,
+          <a href="https://www.ri.cmu.edu/ri-people/haoru-xue/">Haoru Xue</a>, Zhikai Zhang
+          <br>
+          <em>16-745: Optimal Control and Reinforcement Learning</em>
+          <br>
+          <p>Several ballbots have been developed, yet only
+            a handful have been equipped with arms to enhance their
+            maneuverability and manipulability. The incorporation of 7-DOF arms to the CMU ballbot has presented challenges in
+            balancing and navigation due to the constantly changing center
+            of mass. This project aims to propose a control strategy that
+            incorporates the arms dynamics. Our approach is to use a
+            simplified whole-body dynamics model, with only the shoulder
+            and elbow joints moving for each arm. This reduces the number
+            of states and accelerates convergence. We focused on two specific
+            tasks: navigation (straight and curved paths) and pushing against
+            a wall. Trajectories were generated using direct collocation for
+            the navigation task and hybrid contact trajectory optimization
+            for pushing the wall. A time-variant linear quadratic regulator
+            (TVLQR) was designed to track the trajectories. The resulting
+            trajectories were tracked with a mean-average error of less
+            than 4 cm, even for the more complex path. These experiments
+            represent an initial step towards unlocking the full potential of
+            ballbots in dynamic and interactive environments. 
+          </p>
+        </td>
+        
+      </tbody>
+    </table>
+
+    <!-- ECE 276C -->
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
         <td style="padding:20px;width:30%;vertical-align:middle;text-align: center;">
@@ -611,12 +670,8 @@
           <strong>Sayan Mondal</strong>,
           <a href="http://www.svcl.ucsd.edu/people/david/">David Orozco</a>, Nicholas Ha
           <br>
-          <em>ECE 276C</em>
+          <em>ECE 276C: Robot Reinforcement Learning</em>
           <br>
-          <!-- <a href="https://thaipduong.github.io/refgovham/">video</a> / -->
-          <!-- <a href="https://drive.google.com/file/d/1JKCXhExtq4FK1ubQGmm20MsurrnsFV1W/view?usp=sharing">Project Paper Link</a> -->
-          <!-- <a href="course_projects/ECE_276C/LARGE_bf_Adaptive_Model_based_Generative_Adversarial_Imitiation_Learning.pdf">Project Paper Link</a> -->
-
           <p>In this paper we introduce a new concept named,
             AMGAIL to solve the imitation learning problem in an environment in which rewards are available. AMGAIL is based
             on MGAIL, but it replaces bad expert trajectories with good
