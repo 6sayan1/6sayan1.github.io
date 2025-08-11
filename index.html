@@ -683,6 +683,48 @@
     </tbody>
   </table>
 
+  <!-- Roboforce -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <td style="padding:20px;width:30%;vertical-align:middle;text-align: top;">
+          <video width="220" muted autoplay loop>
+            <source src="course_projects/RF/peg_insertion_teleop.mp4" type="video/mp4">
+          </video>
+          <!-- <p style="text-align: center;">Simulation</p> -->
+          <video width="220" muted autoplay loop>
+            <source src="course_projects/RF/peg_insertion_simulated_agent.mp4" type="video/mp4">
+          </video>
+          <!-- <p style="text-align: center;">jj</p> -->
+        </td>
+  
+        <td style="padding:20px;width:80%;vertical-align:middle">
+          <a href="course_projects/RF/Peg_Insertion_Simulator_Report_v2.pdf">
+            <papertitle>Peg Insertion Simulator
+            </papertitle>
+          </a>
+          <br>
+          <strong>Sayan Mondal</strong>
+          <br>
+          <em>Personal Project</em>
+          <br>
+          <p>I built a physics-realistic peg-in-hole manipulation system in MuJoCo using a Robotiq 2F-85 gripper 
+            from the mujoco_menagerie and two meshes (peg and cuboid with hole). To keep control explicit and 
+            reproducible—no mocap—the gripper mounts on a custom 6-DoF base (three prismatic slides + one ball 
+            joint) with a tendon-actuated jaw. A compact Cartesian controller tracks position on the slides and 
+            orientation via body-fixed angular-velocity control with torque limits. Contact modeling is tuned per 
+            geometry (friction and solref/solimp), and the non-convex hole block is represented by convex parts 
+            for robust collision. The system supports both intuitive teleoperation and a scripted finite-state 
+            agent (approach → grasp → lift → rotate ~95° → align → release). Randomized placement, runtime speed 
+            control, and structured logging (poses, jaw separation, filtered contact forces) make experiments 
+            repeatable and debuggable. The result is a stable, re-implementable baseline that reliably handles 
+            tight-tolerance alignment and insertion while exposing a simple API: 6-D pose + one jaw command. 
+            Code is not publicly hosted—contact me for access.
+          </p>
+        </td>
+        
+      </tbody>
+    </table>
+
   <!-- 16-831 IRL -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
